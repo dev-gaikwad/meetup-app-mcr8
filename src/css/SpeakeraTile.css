@@ -1,0 +1,40 @@
+.speakerTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 150px;
+}
+
+.speakerPhoto {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  position: relative;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.speakerPhoto img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.speakerInfo p {
+  text-align: center;
+  margin: 0.25rem;
+}
+
+.speakerName {
+  font-weight: bold;
+}
+
+.speakerDesignation {
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}

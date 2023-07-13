@@ -1,0 +1,47 @@
+.eventTile {
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.thumbnailContainer {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.thumbnailContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 0.5rem;
+}
+
+.thumbnailContainer p {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0rem;
+  background-color: whitesmoke;
+  padding: 0.25rem;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.eventTime {
+  color: var(--secondary-text);
+  margin: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.eventTitle {
+  font-weight: bold;
+  margin: 0.25rem;
+}
+
+.eventLocation {
+  color: var(--secondary-text);
+  margin: 0;
+}

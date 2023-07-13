@@ -1,0 +1,66 @@
+.detailsPageContainer {
+  display: flex;
+  margin: auto;
+}
+
+.eventDetailsContainer {
+  width: 66%;
+  padding: 1rem;
+}
+
+.hostedBy {
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+.data-hostedBy {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.eventDetailsContainer img {
+  width: 100%;
+}
+
+.label-info {
+  font-weight: bold;
+}
+
+.label-info span {
+  font-weight: normal;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: var(--accent-red);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  min-width: 50px;
+  text-align: center;
+}
+
+.eventInfoContainer {
+  width: 33%;
+  padding: 1rem;
+}
+
+.detailsTile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.speakersContainer {
+  display: flex;
+  flex-wrap: wrap;
+}

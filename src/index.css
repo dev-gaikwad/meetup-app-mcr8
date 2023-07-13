@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --primary-text: #181818;
+  --secondary-text: #b3b3b3;
+
+  --accent-red: #ff3b30;
+  --accent-yellow: #ffcc00;
+  --accent-green: #4cd964;
+  --accent-orange: #ff9500;
+  --accent-blue: #007aff;
+  --accent-teal: #5ac8fa;
+  --accent-purple: #5856d6;
+  --accent-pink: #ff2d55;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +26,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+  color: var(--primary-text);
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0.25rem;
+}
+p {
+  margin: 0.25rem;
+}
+section h1 {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+button {
+  width: 100%;
+  padding: 0.25rem;
+
+  background-color: transparent;
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--accent-red);
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }

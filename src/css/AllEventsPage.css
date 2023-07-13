@@ -1,0 +1,12 @@
+.allEventsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventTilesContainer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
