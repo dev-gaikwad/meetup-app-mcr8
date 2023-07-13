@@ -1,12 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { MdSchedule, MdLocationOn, MdCurrencyRupee } from 'react-icons/md';
 
 import { MeetUpContext } from '../context/MeetUpContext';
 import SpeakerTile from '../components/SpeakerTile';
 import '../css/EventDetailsPage.css';
+import RSVPModal from '../components/RSVPModal';
 
 const EventDetailsPage = () => {
+  const [displayModal, setDisplayModal] = useState(false);
+
   const { id } = useParams();
   const { allMeetUps } = useContext(MeetUpContext);
   const navigate = useNavigate();
@@ -32,7 +35,9 @@ const EventDetailsPage = () => {
           </p>
           <h3>Event Tags</h3>
           {event.eventTags.map((tag) => (
-            <p className='tag'>{tag}</p>
+            <p key={tag} className='tag'>
+              {tag}
+            </p>
           ))}
         </div>
 
@@ -62,10 +67,12 @@ const EventDetailsPage = () => {
           </div>
 
           <div className='rsvpContainer'>
-            <button onClick={() => {}}>RSVP</button>
+            <button onClick={() => setDisplayModal(true)}>RSVP</button>
           </div>
         </div>
       </div>
+
+      {displayModal && <RSVPModal setDisplayModal={setDisplayModal} />}
     </main>
   ) : (
     <main>

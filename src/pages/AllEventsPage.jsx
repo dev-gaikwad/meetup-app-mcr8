@@ -6,7 +6,6 @@ import { MeetUpContext } from '../context/MeetUpContext';
 
 const AllEventsPage = () => {
   const { displayEvents } = useContext(MeetUpContext);
-  console.log('allMeetups ->', displayEvents);
 
   return (
     <main>

@@ -1,0 +1,79 @@
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  margin: 0.5rem;
+  width: 90vw;
+  max-width: 600px;
+  padding: 1rem;
+  background: var(--accent-red);
+  z-index: 100;
+  border-radius: 0.5rem;
+}
+
+.modal-heading {
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.RSVP-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.RSVP-form input {
+  box-shadow: rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  height: 2rem;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+  margin: 0.25rem 0rem;
+  padding: 0rem 0.5rem;
+}
+
+.input-container {
+  margin: 0.5rem 0rem;
+}
+
+.input-container select {
+  padding: 0.5rem;
+  width: fit-content;
+  margin: 0rem 0.5rem;
+  background-color: var(--background-overlay-color);
+  color: var(--primary-text);
+}
+
+.modal-buttons-container {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.modal-btn {
+  background-color: var(--accent-green);
+  color: white;
+}
+.modal-btn:hover {
+  background-color: var(--accent-green);
+}
